@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_impar"
+        android:gravity="center_vertical|left"
+        android:text="@string/motivo_abono"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/motivo_anulacion_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_impar"
+        android:gravity="center_vertical|left"
+        android:text="@string/observaciones"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/observaciones_anulacion_input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+		android:digits="@string/allow_digits" 
+        android:background="@drawable/celdas_par"
+        android:hint=""
+        android:maxLength="219" >
+
+        <requestFocus />
+    </EditText>
+            
+</LinearLayout>

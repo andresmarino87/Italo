@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"        
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/view_border"
+    tools:context=".Cartera_Resumen_Pagos"  >
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/pagos"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <TextView
+		    android:id="@+id/todos_los_clientes_label"
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+			android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:text="@string/todos_los_clientes" />
+	<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/resumen_pagos_del_dia"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:padding="10dp" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="@string/sinc"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cliente_table_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="15"
+                        android:gravity="center"
+                        android:text="@string/cliente"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/n_pago"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/hora"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/total_pago"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/cobro_proyectado"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/cobro_real"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="@string/cartera_vencida"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/listPagos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </TableLayout>
+        </HorizontalScrollView>
+<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/detalle_recaudo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:padding="10dp" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/tipo_doc"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/n_documento"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/saldo"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/valor_pago"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/listDetalleRecaudo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </TableLayout>
+        </HorizontalScrollView>
+<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/forma_pago"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:padding="10dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/celdas_header"
+                        android:gravity="center"
+                        android:text="@string/forma_pago"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/celdas_header"
+                        android:gravity="center"
+                        android:text="@string/valor"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/listFormaPago"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </TableLayout>
+</LinearLayout>

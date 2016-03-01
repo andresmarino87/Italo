@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/mas_opciones"
+		android:title="@string/opciones"
+    	android:icon="@drawable/mas_opciones"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+			<item android:id="@+id/programar_cobro"
+		        android:title="@string/programar_cobro"
+		       	android:showAsAction="collapseActionView" />	
+		</menu>
+	</item>	
+    <item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+</menu>

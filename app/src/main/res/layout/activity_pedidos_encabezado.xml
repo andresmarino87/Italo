@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context=".Pedidos_Encabezado" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/saldo_actual_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/celdas_header"
+            android:text="@string/saldo_actual"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/saldo_actual_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/oc_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/O_C"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/oc_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/oc_si_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/si" />
+
+            <RadioButton
+                android:id="@+id/oc_no_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/oc_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLength="14"
+            android:hint="@string/orden_de_compra" />
+        <TextView
+            android:id="@+id/cupo_disponible_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/cupo_disponible"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cupo_disponible_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/n_pedido_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/n_pedido"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/n_pedido_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cond_pago_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/cond_pago"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cond_pago_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/estado_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/estado"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/estado_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/fecha_entrega_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/fecha_entrega"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fecha_entrega_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/seleccione_una_fecha"
+            android:inputType="date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/celdas_header"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/observaciones_pedido_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/observaciones_pedido"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/observaciones_pedido_borrar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:contentDescription="@string/borrar"
+                android:src="@drawable/borrar" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/observaciones_pedido_input"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:digits="@string/allow_digits" 
+            android:inputType="textMultiLine"
+            android:maxLength="438" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/celdas_header" >
+
+            <TextView
+                android:id="@+id/observaciones_factura_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/observaciones_factura"
+                android:gravity="center"
+                android:textColor="@color/white"
+	            android:textStyle="bold" />
+			<ImageView
+                android:id="@+id/observaciones_factura_borrar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:contentDescription="@string/borrar"
+                android:src="@drawable/borrar" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/observaciones_factura_input"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:digits="@string/allow_digits" 
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            android:maxLength="146" />        
+    </LinearLayout>
+</ScrollView>

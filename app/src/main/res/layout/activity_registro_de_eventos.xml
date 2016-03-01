@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp" 
+	    android:background="@drawable/view_border"
+	    tools:context=".Registro_de_Eventos" >
+            <TextView
+            android:id="@+id/menu_actividad_diaria_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/eventos"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+			<TextView
+                android:id="@+id/cliente_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+       			android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp" />
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp" >
+
+				<TextView
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:background="@drawable/celdas_header"
+				    android:text="@string/vendedor"
+				    android:textColor="@color/white"
+				    android:textStyle="bold" />
+				<TextView
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="0.5"
+				    android:background="@drawable/celdas_header"
+				    android:text="@string/fecha"
+				    android:textColor="@color/white"
+				    android:textStyle="bold" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			     >
+
+				<TextView
+				    android:id="@+id/vendedor_input"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+				<TextView
+				    android:id="@+id/fecha_actual_input"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="0.5"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			</LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/celdas_header"
+                android:text="@string/evento"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/evento_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                     >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+						android:layout_weight="1"
+                        android:background="@drawable/celdas_header"
+                        android:text="@string/fecha"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+    					android:layout_weight="0.5"
+	                 	android:background="@drawable/celdas_header"
+                        android:text="@string/hora"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                 >
+
+                    <TextView
+                        android:id="@+id/fecha_input"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/celdas_par"
+                        android:gravity="center_vertical"
+                        android:hint="@string/seleccione_una_fecha" />
+
+                    <TextView
+                        android:id="@+id/hora_input"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:hint="@string/hora"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/celdas_par" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/celdas_header"
+                        android:text="@string/avisar"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/cantidad_tiempo_input"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:maxLength="3"
+                        android:inputType="number" />
+
+                    <Spinner
+                        android:id="@+id/tipo_tiempo_input"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/celdas_header"
+                        android:text="@string/antes"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/celdas_header"
+                android:text="@string/observaciones"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/observaciones_input"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/celdas"
+                android:ems="10"
+				android:digits="@string/allow_digits" 
+	            android:inputType="textMultiLine"
+                android:maxLength="150" />
+
+    <HorizontalScrollView 
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="8"
+                            android:gravity="center"
+                            android:text="@string/documeto"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="14"
+                            android:gravity="center"
+                            android:text="@string/tipo_documento"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="5"
+                            android:gravity="center"
+                            android:text="@string/dias"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="9"
+                            android:gravity="center"
+                            android:text="@string/valor"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="8"
+                            android:gravity="center"
+                            android:text="@string/venc"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+						<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="8"
+                            android:gravity="center"
+                            android:text="@string/fecha_fact"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+            </TableRow>
+
+            <ListView
+                android:id="@+id/listFacturas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="multipleChoice" >
+            </ListView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+            
+            
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/celdas_header"
+                        android:gravity="center"
+                        android:text="@string/evento"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/celdas_header"
+                        android:gravity="center"
+                        android:text="@string/fecha"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/celdas_header"
+                        android:gravity="center"
+                        android:text="@string/hora"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            <ListView
+            	android:id="@+id/listRegistoVisitas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice" >
+        	</ListView>
+    	</TableLayout>
+	</LinearLayout>
+</LinearLayout>

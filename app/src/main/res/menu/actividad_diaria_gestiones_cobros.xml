@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   	<item android:id="@+id/cobros_sinc"
+        android:icon="@drawable/ic_cobros_sinc"
+        android:title="@string/cobros_sincronizados"
+       	android:showAsAction="always" />
+   	<item android:id="@+id/buscar"
+        android:icon="@drawable/buscar"
+        android:title="@string/buscar"
+       	android:showAsAction="always" />
+   	<item android:id="@+id/adicionar_pago"
+        android:icon="@drawable/money"
+        android:title="@string/adicionar_pago"
+       	android:showAsAction="always" />
+	<item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+</menu>

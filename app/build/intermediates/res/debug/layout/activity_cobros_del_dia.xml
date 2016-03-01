@@ -1,0 +1,159 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:layout_margin="10dp"
+    android:background="@drawable/view_border"
+    tools:context=".Cobros_Del_Dia"
+    >
+
+    <TextView
+        android:id="@+id/view_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/Cobros_del_dia"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_head"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/total_registros"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/row_input"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/input_gris"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/codigo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="14"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/cliente" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/tipo_pago" />
+					<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/documento" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/valor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/forma_pago" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/fecha" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+			            android:textStyle="bold"
+            			android:textColor="@color/white"
+                        android:text="@string/hora_venta" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/listCobrosDelDia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</RelativeLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_cobros_del_dia.xml -->

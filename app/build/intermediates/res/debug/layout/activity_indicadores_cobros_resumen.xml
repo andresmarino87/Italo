@@ -1,0 +1,283 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+	    android:layout_margin="10dp"
+        tools:context=".Indicadores_Cobros_Resumen"  >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/total_registros"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_input"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/input_gris"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="590dp"
+            android:layout_marginTop="5dp" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/codigo"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="20"
+                        android:gravity="center"
+                        android:text="@string/cliente"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/tipo_pago"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/documento"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="9"
+                        android:gravity="center"
+                        android:text="@string/valor"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="7"
+                        android:gravity="center"
+                        android:text="@string/forma_pago"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/fecha"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="8"
+                        android:gravity="center"
+                        android:text="@string/hora_venta"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/listCobros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/total_efectivo_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_efectivo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_efectivo_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_gris"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/total_cheque_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_cheque"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_cheque_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_gris"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/total_transferencia_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_transferencia"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_transferencia_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_gris"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/total_consignacion_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_consignacion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_consignacion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_gris"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/total_cheque_postfechado_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_cheque_postfechado"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_cheque_postfechado_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_gris"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/total_recaudo_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_recaudo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_recaudo_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_gris"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_indicadores_cobros_resumen.xml -->

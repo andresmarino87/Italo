@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  	<item android:id="@+id/crear"
+        android:title="@string/crear"
+       	android:showAsAction="always" />	
+	<item android:id="@+id/consultar"
+        android:title="@string/consultar"
+       	android:showAsAction="always" />
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/menu_crear_consultar.xml -->

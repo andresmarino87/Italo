@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/borrar_bd"
+          android:icon="@drawable/borrar_base_datos"
+          android:title="@string/borrar_base_datos" android:showAsAction="ifRoom"/>
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/menu_login.xml -->

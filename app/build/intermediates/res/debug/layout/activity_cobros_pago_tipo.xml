@@ -1,0 +1,208 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".Cobros_Pago_Tipo" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/tipo_pago"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+				<TextView
+			    	android:id="@+id/valor_efectivo_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/valor_efectivo"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/valor_efectivo_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/valor_efectivo"
+			        android:layout_marginTop="5dp"
+			        android:inputType="number" />
+			 	<TextView
+			    	android:id="@+id/valor_cheque_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/valor_cheque"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/valor_cheque_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/valor_cheque"
+			        android:layout_marginTop="5dp"
+			        android:inputType="number" />	            
+				<TextView
+			    	android:id="@+id/banco_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/banco"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<Spinner
+			    	android:id="@+id/banco_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp" />
+				<TextView
+			    	android:id="@+id/cuenta_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/cuenta"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/cuenta_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/cuenta"
+			        android:layout_marginTop="5dp" />	            
+				<TextView
+			    	android:id="@+id/n_tranferencia_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/n_tranferencia"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/n_tranferencia_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/n_tranferencia"
+			        android:layout_marginTop="5dp" />	            
+				<TextView
+			    	android:id="@+id/numero_cheque_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/numero_cheque"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/numero_cheque_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/numero_cheque"
+			        android:layout_marginTop="5dp" />
+				<TextView
+			    	android:id="@+id/fecha_cheque_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/fecha_cheque"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/fecha_cheque_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/seleccione_una_fecha"
+			        android:layout_marginTop="5dp" />
+				<TextView
+			    	android:id="@+id/fecha_cobro_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/fecha_cobro"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/fecha_cobro_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/seleccione_una_fecha"
+			        android:layout_marginTop="5dp" />
+	            <TextView
+			    	android:id="@+id/valor_label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/valor"
+			        android:textColor="@color/white"
+			        android:textStyle="bold"
+			        android:layout_marginTop="5dp"
+			        android:background="@drawable/celdas_header" />
+				<EditText
+			    	android:id="@+id/valor_input"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/valor"
+			        android:layout_marginTop="5dp"
+			        android:inputType="number" />
+			    
+			    <TableLayout
+	                android:id="@+id/tableNotasCreditos"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	
+	                <TableRow
+	                    android:id="@+id/tableRow0"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="fill_parent" >
+	
+	                    <TextView
+	                        android:id="@+id/table_n_cobro_codigo"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="fill_parent"
+	                        android:background="@drawable/celdas_header"
+	                        android:ems="9"
+	                        android:gravity="center"
+	                        android:text="@string/n_pago"
+	                        android:textColor="@color/white"
+	                        android:textStyle="bold" />
+	
+	                    <TextView
+	                        android:id="@+id/table_forma_pago_codigo"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="fill_parent"
+	                        android:background="@drawable/celdas_header"
+	                        android:ems="9"
+	                        android:gravity="center"
+	                        android:text="@string/forma_pago"
+	                        android:textColor="@color/white"
+	                        android:textStyle="bold" />
+	
+	                    <TextView
+	                        android:id="@+id/table_valor_codigo"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="fill_parent"
+	                        android:background="@drawable/celdas_header"
+	                        android:ems="9"
+	                        android:gravity="center"
+	                        android:text="@string/valor"
+	                        android:textColor="@color/white"
+	                        android:textStyle="bold" />
+	                </TableRow>
+	
+	                <ListView
+	                    android:id="@+id/listNotasCredito"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:choiceMode="singleChoice" >
+	                </ListView>
+	            </TableLayout>
+            </LinearLayout>
+</ScrollView><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_cobros_pago_tipo.xml -->

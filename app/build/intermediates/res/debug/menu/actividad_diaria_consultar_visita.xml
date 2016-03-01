@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu" 
+        android:title="@string/menu" 
+        android:icon="@drawable/menu"
+		android:showAsAction="always"/>
+	<item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+    <item android:id="@+id/consulta_opciones"
+		android:title="@string/consultas"
+    	android:icon="@drawable/cliente_consultas"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    <item android:id="@+id/consultas_pedidos"
+		        android:title="@string/pedidos"
+		       	android:showAsAction="collapseActionView" />
+		    <item android:id="@+id/consultas_cobros"
+		        android:title="@string/cobros"
+		       	android:showAsAction="collapseActionView" />
+		    <item android:id="@+id/consultas_datos_del_clientes"
+		        android:title="@string/datos_del_cliente"
+		       	android:showAsAction="collapseActionView" />
+		    <item android:id="@+id/consultas_cartera"
+		        android:title="@string/cartera"
+		       	android:showAsAction="collapseActionView" />	
+			<item android:id="@+id/consultas_historicos"
+		        android:title="@string/historicos"
+			    android:showAsAction="collapseActionView" />		
+		</menu>
+	</item>	
+	<item android:id="@+id/mas_opciones"
+		android:title="@string/opciones"
+    	android:icon="@drawable/mas_opciones"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    <item android:id="@+id/gestiones"
+		        android:title="@string/gestiones"
+		       	android:showAsAction="collapseActionView" />	
+			<item android:id="@+id/iniciar_visita_finalizar_visita"
+		        android:title="@string/iniciar_visita_finalizar_visita"
+			    android:showAsAction="collapseActionView" />		
+		</menu>
+	</item>	
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/actividad_diaria_consultar_visita.xml -->

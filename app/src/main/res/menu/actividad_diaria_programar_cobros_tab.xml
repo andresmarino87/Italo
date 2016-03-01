@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/opciones_app"
+        android:icon="@drawable/mas_opciones"
+        android:showAsAction="always"
+        android:title="@string/opciones">
+        <menu>
+            <item
+                android:id="@+id/adicionar_cobro"
+                android:showAsAction="collapseActionView"
+                android:title="@string/adicionar_cobro"/>
+            <item
+                android:id="@+id/eliminar_cobro"
+                android:showAsAction="collapseActionView"
+                android:title="@string/eliminar_cobro"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_app"
+        android:icon="@drawable/menu"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu">
+    </item>
+    <item
+        android:id="@+id/salir_app"
+        android:icon="@drawable/atras"
+        android:showAsAction="ifRoom"
+        android:title="@string/salir">
+    </item>
+
+</menu>

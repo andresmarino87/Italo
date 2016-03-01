@@ -1,0 +1,277 @@
+    <LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:layout_margin="10dp"
+	    android:background="@drawable/view_border"
+	    android:orientation="vertical" 
+	    tools:context=".Consignaciones_Consultar" 
+        >
+
+        <TextView
+            android:id="@+id/view_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/consignaciones"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/fecha_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fecha"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecha_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas"
+                    android:gravity="right"
+                    android:text=""
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pagos_a_consignar"
+				android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:layout_marginTop="5dp" >
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/tableRow0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:id="@+id/editText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="12"
+                            android:gravity="center"
+                            android:text="@string/medio_de_pago"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/editText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="6"
+                            android:gravity="center"
+                            android:text="@string/documento"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/editText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="5"
+                            android:gravity="center"
+                            android:text="@string/codigo"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/editText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="14"
+                            android:gravity="center"
+                            android:text="@string/cliente"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/editText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="7"
+                            android:gravity="center"
+                            android:text="@string/valor"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <ListView
+                        android:id="@+id/listView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/valor_consignar_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/valor_a_consignar"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valor_consignar_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_gris"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/editText6"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search"
+                    android:text="@string/n_consignacion"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/editText9"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/banco_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search"
+                    android:text="@string/banco"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/banco_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/cuenta_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search"
+                    android:text="@string/cuenta"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/cuenta_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/fecha_consignacion_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search"
+                    android:text="@string/fecha"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/fecha_consignacion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/valor_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search"
+                    android:text="@string/valor"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/valor_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>

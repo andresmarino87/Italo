@@ -1,0 +1,103 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/view_border"
+	android:orientation="vertical"
+    tools:context=".Cobros_Sincronizados"  >
+
+        <TextView
+            android:id="@+id/view_Head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/cobros"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cliente_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+			android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="@string/sinc"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="9"
+                        android:gravity="center"
+                        android:text="@string/n_cobro"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="9"
+                        android:gravity="center"
+                        android:text="@string/fecha"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="9"
+                        android:gravity="center"
+                        android:text="@string/hora"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="9"
+                        android:gravity="center"
+                        android:text="@string/valor_total"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                                     
+                </TableRow>
+                <ListView
+                    android:id="@+id/listCobrosSincronizados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </TableLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+<!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_cobros_sincronizados.xml -->

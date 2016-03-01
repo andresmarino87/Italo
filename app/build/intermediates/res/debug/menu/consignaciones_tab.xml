@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/buscar" 
+        android:title="@string/buscar" 
+        android:icon="@drawable/buscar"
+       	android:showAsAction="ifRoom" />
+    <item android:id="@+id/mas_opciones"
+		android:title="@string/opciones"
+    	android:icon="@drawable/mas_opciones"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    <item android:id="@+id/adicionar"
+		        android:title="@string/adicionar"
+		       	android:showAsAction="collapseActionView" />	
+		</menu>
+	</item>
+    <item android:id="@+id/atras" 
+        android:title="@string/atras" 
+        android:icon="@drawable/atras"
+       	android:showAsAction="ifRoom" />
+    
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/consignaciones_tab.xml -->

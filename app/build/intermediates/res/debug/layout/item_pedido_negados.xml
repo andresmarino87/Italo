@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+        xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" >
+		<TextView
+	    	android:id="@+id/row_pedido_input"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/celdas"
+	        android:ems="8"
+            android:gravity="center_vertical|left"
+	        android:textColor="@drawable/text_selector"
+	     	android:text="" />
+		<TextView
+           	android:id="@+id/row_codigo_input"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+        	android:ems="8"
+            android:gravity="center_vertical|left"
+	        android:textColor="@drawable/text_selector"
+        	android:text="" />
+		<TextView
+        	android:id="@+id/row_cliente_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/celdas"
+            android:ems="15"
+            android:gravity="center_vertical|left"
+	        android:textColor="@drawable/text_selector"
+            android:text="" />
+    	<TextView
+        	android:id="@+id/valor_row_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+        	android:ems="9"
+            android:gravity="center_vertical|left"
+	        android:textColor="@drawable/text_selector"
+    		android:text="" />
+</TableRow><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/item_pedido_negados.xml -->

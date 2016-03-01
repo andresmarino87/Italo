@@ -1,0 +1,192 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    tools:context=".Cliente_Horarios_Modificar" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/tipo_de_horario"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/tipo_horario_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/lugar"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lugar_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text=""
+            android:maxLength="30"
+			android:digits="@string/allow_digits" 
+            android:hint="@string/lugar" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/estado"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/estado_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_header"
+                android:text="@string/hora_inicial"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_header"
+                android:text="@string/hora_final"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/hora_inicial_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:inputType="time"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/hora_final_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:inputType="time"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/celdas_header"
+            android:text="@string/dias"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <CheckBox
+                android:id="@+id/lun_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/lun" />
+
+            <CheckBox
+                android:id="@+id/mar_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/mar" />
+
+            <CheckBox
+                android:id="@+id/mie_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/mie" />
+
+            <CheckBox
+                android:id="@+id/jue_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/jue" />
+			<CheckBox
+                android:id="@+id/vie_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/vie" />
+		</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            
+
+            <CheckBox
+                android:id="@+id/sab_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/sab" />
+
+            <CheckBox
+                android:id="@+id/dom_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/dom" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

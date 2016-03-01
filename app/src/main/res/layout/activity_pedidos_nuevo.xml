@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/view_border"
+    tools:context=".Pedidos_Nuevo" >
+
+    <TextView
+        android:id="@+id/view_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/buscar"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/buscar_por_search"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:entries="@array/filtros_pedido_string_simple_array"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/text_input_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:digits="@string/allow_digits"
+            android:background="@drawable/celdas_par"
+            android:ems="10"
+            android:hint="@string/buscar" />
+
+        <Button
+            android:id="@+id/buscar_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/buscar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:background="@color/light_gray" >
+
+        <ExpandableListView
+            android:id="@+id/familia_expand"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:choiceMode="singleChoice" >
+        </ExpandableListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/galeria_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <GridView
+                android:id="@+id/listProductos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:choiceMode="singleChoice"
+                android:gravity="center_horizontal|top"
+                android:numColumns="2" >
+            </GridView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/displayMiddle"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/celdas_par"
+                android:text="@string/mas_simbolo" />
+
+            <TextView
+                android:id="@+id/fecha_entrega_input"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:hint="@string/fecha_entrega"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/observaciones_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:text="@string/observaciones"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/total_label"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@drawable/input_par"
+                android:text="@string/total"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_input"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+			android:id="@+id/layoutToHide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/cupo_disponible"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cupo_disponible_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar" />
+
+                <TextView
+                    android:id="@+id/n_pedido_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/n_pedido"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/n_pedido_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/cond_pago_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_par"
+                    android:text="@string/cond_pago"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cond_pago_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par" />
+
+                <TextView
+                    android:id="@+id/estado_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_par"
+                    android:text="@string/estado"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/estado_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:text="@string/borrador" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/saldo_actual_label"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/saldo_actual"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/saldo_actual_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar" />
+
+                <TextView
+                    android:id="@+id/oc_label"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/o_c"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6" >
+
+                    <Spinner
+                        android:id="@+id/oc_spinner"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/celdas_impar"
+                        android:entries="@array/si_no_array" />
+
+                    <EditText
+                        android:id="@+id/oc_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/celdas_impar"
+                        android:digits="@string/allow_digits"
+                        android:lines="1"
+                        android:maxLength="14"
+                        android:hint=""
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<HorizontalScrollView
+    android:id="@+id/horizontalScrollView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp" >
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow0"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/table_head_codigo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="23"
+                    android:gravity="center"
+                    android:text="@string/producto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/presentacion"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/valor_unitario"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/sugerido"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/cantidad"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/prom_especie"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/porc_promo"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/valor_promo"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/iva"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="8"
+                    android:gravity="center"
+                    android:text="@string/subtotal"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+            <ListView
+                android:id="@+id/listPedidoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </TableLayout>
+</HorizontalScrollView>
+</LinearLayout>

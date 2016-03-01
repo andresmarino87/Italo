@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tableRow1"
+	android:layout_width="fill_parent"
+	android:layout_height="50dp" >
+	<TextView
+       	android:id="@+id/row_ruta_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/celdas"
+        android:ems="6"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+        android:text="" />
+	<TextView
+        android:id="@+id/row_codigo_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/celdas"
+        android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+        android:text="" />
+	<TextView
+		android:id="@+id/row_cliente_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="15"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />
+	<TextView
+		android:id="@+id/row_venta_proy_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="8"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />
+	<TextView
+		android:id="@+id/row_venta_real_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="8"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />
+	<TextView
+		android:id="@+id/row_cobro_proy_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="8"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />
+	<TextView
+		android:id="@+id/row_cobro_real_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="8"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />
+		<TextView
+		android:id="@+id/row_cartera_venc_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="5"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />
+</TableRow>

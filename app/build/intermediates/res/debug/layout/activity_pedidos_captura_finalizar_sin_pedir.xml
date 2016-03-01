@@ -1,0 +1,225 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp"
+	android:orientation="vertical" 
+    android:background="@drawable/view_border"
+	tools:context=".Pedidos_Captura_Finalizar_SinPedir"  >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/promociones"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="19"
+                    android:gravity="center"
+                    android:text="@string/producto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:text="@string/cantidad"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="12"
+                    android:gravity="center"
+                    android:text="@string/total"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listPromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/articulos_dejados_de_pedir"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="19"
+                    android:gravity="center"
+                    android:text="@string/producto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:text="@string/cantidad"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="12"
+                    android:gravity="center"
+                    android:text="@string/total"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listSinPedir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/temporada"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        tools:context=".Pedidos_Captura_Finalizar_Temp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="19"
+                    android:gravity="center"
+                    android:text="@string/producto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:text="@string/cantidad"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="12"
+                    android:gravity="center"
+                    android:text="@string/total"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listTemp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_pedidos_captura_finalizar_sin_pedir.xml -->

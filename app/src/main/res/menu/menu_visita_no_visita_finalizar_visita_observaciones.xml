@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/visita"
+        android:title="@string/visita"
+       	android:showAsAction="always" />
+	<item android:id="@+id/motivo_no_visita"
+        android:title="@string/motivo_no_visita"
+       	android:showAsAction="always" />
+	<item android:id="@+id/finalizar_actividad"
+        android:title="@string/finalizar_actividad"
+       	android:showAsAction="always" />
+    <item android:id="@+id/observaciones"
+        android:title="@string/observaciones"
+       	android:showAsAction="always" />
+</menu>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+   	android:background="@drawable/view_border"
+	tools:context=".Actividad_Diaria_Crear" >
+
+            <TextView
+                android:id="@+id/menu_actividad_diaria_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_head"
+                android:gravity="center"
+                android:text="@string/actividad_diaria"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_actividad_diaria_header"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/input_par"
+                    android:text="@string/sector"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sector_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celdas_par"
+                    android:layout_weight="1" />
+
+                <!-- TextView
+                    android:id="@+id/sector_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="center" /-->
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_par"
+                    android:text="@string/ruta"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/ruta_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                     />
+<!-- 
+                <TextView
+                    android:id="@+id/ruta_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="center" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"  >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/n_plan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/n_plan_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/fecha"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecha_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/input_par"
+                    android:text="@string/n_extaruta"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/n_extaruta_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_par"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/n_clientes"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/n_clientes_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/tabla"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/resumen"
+            android:layout_below="@+id/head" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:text="@string/observacion"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="@string/ruta_o_extraruta"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="@string/tejido"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="@string/cuenta"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="@string/cliente"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="9"
+                        android:gravity="center"
+                        android:text="@string/venta_proyectada"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="9"
+                        android:gravity="center"
+                        android:text="@string/cobro_proyectado"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/celdas_header"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="@string/cartera_vencida"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/list_actividad_diaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/resumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/total_dia_en_$_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/total_dia_en_$"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_dia_en_$_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/total_dia_en_cantidad"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/venta_proyectada"
+                    android:background="@drawable/input_impar"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/venta_proy_input_0"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar" />
+
+                <TextView
+                    android:id="@+id/venta_proy_input_1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/cobro_proyectado"
+                    android:background="@drawable/input_par"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cobro_proy_input_0"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par" />
+
+                <TextView
+                    android:id="@+id/cobro_proy_input_1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par" />
+            </LinearLayout>
+        </LinearLayout>
+
+        </RelativeLayout>
+        

@@ -1,0 +1,356 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_margin="10dp"
+	android:background="@drawable/view_border"
+    tools:context=".Asistente_Acumulado_De_Ventas" 
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/acumulado_presupuesto_de_ventas"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5dp"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+			android:textSize="18sp"
+			android:textStyle="bold"
+            android:text="@string/sector" />
+
+        <Spinner
+            android:id="@+id/sector_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+			android:textSize="18sp"
+			android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/todos_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="@string/todos"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buscar_button"
+            android:layout_width="0dip"
+            android:layout_weight="1" 
+            android:layout_height="wrap_content"
+            android:text="@string/buscar" />
+
+    </LinearLayout>
+</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ene"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/enero"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/febrero"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/marzo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/abr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/abril"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/may"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/mayo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jun"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/junio"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jul"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/julio"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ago"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/agosto"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sep"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/septiembre"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/oct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/octubre"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nov"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/noviembre"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_blanco"
+                    android:gravity="center"
+                    android:text="@string/diciembre"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/detalle_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/celdas_rojas"
+                    android:gravity="center"
+                    android:text="@string/detalle"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/periodo_label"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/periodo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/periodo_input"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/celdas"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/presupuesto_label"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/presupuesto"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/presupuesto_input"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/celdas"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/ventas_label"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/ventas"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ventas_input"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/celdas"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/porcentaje_label"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/porcentaje"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/porcentaje_input"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/celdas"
+                            android:gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ranking"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/celdas_rojas"
+                    android:gravity="center"
+                    android:text="@string/ranking"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/posicion_label"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/posicion"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/posicion_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/celdas"
+                        android:gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

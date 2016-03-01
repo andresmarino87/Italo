@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+        xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" >
+		<TextView
+	    	android:id="@+id/row_doc_input"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/celdas"
+	        android:ems="8"
+			android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+	     	android:text="" />
+		<TextView
+           	android:id="@+id/row_tipo_doc_input"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+        	android:ems="14"
+        	android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+        	android:text="" />
+		<TextView
+           	android:id="@+id/row_dias_input"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+        	android:ems="5"
+        	android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+        	android:text="" />
+		<TextView
+           	android:id="@+id/row_valor_input"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+        	android:ems="9"
+        	android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+        	android:text="" />
+		<TextView
+           	android:id="@+id/row_saldo_input"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+        	android:ems="9"
+        	android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+        	android:text="" />
+		<TextView
+           	android:id="@+id/row_vencimiento_input"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+        	android:ems="8"
+        	android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+        	android:text="" />
+		<TextView
+        	android:id="@+id/row_fecha_fact_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/celdas"
+            android:ems="8"
+            android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+            android:text="" />
+</TableRow>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/view_border"
+    tools:context=".Cliente_Consultas_Otros_Eventos"  >
+
+        <TextView
+            android:id="@+id/view_Head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/historicos_visitas"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cliente_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                                            android:layout_weight="1"
+                    
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/celdas_impar"
+                        android:gravity="center"
+                        android:text="@string/visitas"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" >
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="9"
+                                    android:gravity="center"
+                                    android:text="@string/visita_n"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="5"
+                                    android:gravity="center"
+                                    android:text="@string/cant_eventos"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="5"
+                                    android:gravity="center"
+                                    android:text="@string/hora_inicio"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="5"
+                                    android:gravity="center"
+                                    android:text="@string/hora_final"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="6"
+                                    android:gravity="center"
+                                    android:text="@string/duracion_en_min"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="20"
+                                    android:gravity="center"
+                                    android:text="@string/observaciones"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <ListView
+                                android:id="@+id/listVisitas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:choiceMode="singleChoice" >
+                            </ListView>
+                        </TableLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/celdas_impar"
+                        android:gravity="center"
+                        android:text="@string/detalle_de_eventos"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" >
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="12"
+                                    android:gravity="center"
+                                    android:text="@string/evento"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="5"
+                                    android:gravity="center"
+                                    android:text="@string/hora_inicio"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="5"
+                                    android:gravity="center"
+                                    android:text="@string/hora_final"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="5"
+                                    android:gravity="center"
+                                    android:text="@string/duracion_en_min"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="15"
+                                    android:gravity="center"
+                                    android:text="@string/observaciones"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <ListView
+                                android:id="@+id/listEventos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:choiceMode="singleChoice" >
+                            </ListView>
+                        </TableLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_cliente_consultas_historicos_otros_eventos.xml -->

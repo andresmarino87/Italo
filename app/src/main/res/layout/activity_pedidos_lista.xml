@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:padding="10dp"
+    tools:context=".Pedidos_Lista" >
+<LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/total_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/total"
+                android:background="@drawable/input_par"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+<HorizontalScrollView
+    android:id="@+id/horizontalScrollView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/linearLayout5" >
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow0"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/table_head_codigo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="20"
+                    android:gravity="center"
+                    android:text="@string/producto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/pres"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/vr_unitario"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/sug"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/cant"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/prom_especie"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/porc_prom"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/vr_prom"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="7"
+                    android:gravity="center"
+                    android:text="@string/iva"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="8"
+                    android:gravity="center"
+                    android:text="@string/subtotal"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+            <ListView
+                android:id="@+id/listPedidoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </TableLayout>
+</HorizontalScrollView>
+
+</RelativeLayout>

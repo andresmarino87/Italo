@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/nuevo_pedido" 
+        android:title="@string/adicionar" 
+        android:icon="@drawable/add_pedido"
+		android:showAsAction="always"/>
+	<item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+</menu>

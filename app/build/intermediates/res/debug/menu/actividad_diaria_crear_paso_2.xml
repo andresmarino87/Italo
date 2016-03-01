@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/siguiente"
+        android:icon="@drawable/siguiente"
+        android:title="@string/siguiente"
+       	android:showAsAction="always" />
+	<item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+	
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/actividad_diaria_crear_paso_2.xml -->

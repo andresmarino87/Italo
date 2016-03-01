@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tableRow1"
+	android:layout_width="fill_parent"
+	android:layout_height="50dp" >
+	<TextView
+       	android:id="@+id/row_delete_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/celdas"
+        android:ems="3"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+        android:onClick="onClickTextView"
+        android:text="" />
+    <TextView
+       	android:id="@+id/row_producto_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/celdas"
+        android:ems="20"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+        android:text="" />
+	<TextView
+        android:id="@+id/row_pres_input"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/celdas"
+        android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+        android:text="" />
+	<TextView
+		android:id="@+id/row_vr_unitario_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />
+	<TextView
+		android:id="@+id/row_sug_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/cel_sug"
+		android:ems="7"
+		android:gravity="center_vertical|left"
+		android:textColor="@color/white"
+		android:text="" />                            
+	<TextView
+		android:id="@+id/row_cant_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />                            
+	<TextView
+		android:id="@+id/row_promo_especie_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />                            
+	<TextView
+		android:id="@+id/row_porc_promo_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />                            
+	<TextView
+		android:id="@+id/row_vr_promo_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />                            
+	<TextView
+		android:id="@+id/row_iva_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="7"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />                            
+	<TextView
+		android:id="@+id/row_subtotal_input"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@drawable/celdas"
+		android:ems="8"
+		android:gravity="center_vertical|left"
+        android:textColor="@drawable/text_selector"
+		android:text="" />                            
+</TableRow>

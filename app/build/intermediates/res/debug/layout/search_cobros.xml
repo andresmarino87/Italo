@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/edadesGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/menor_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/menor_a_30_dias" />
+
+        <RadioButton
+            android:id="@+id/mayor_a_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mayor_a_30_dias" />
+
+        <RadioButton
+            android:id="@+id/mayor_a_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mayor_a_60_dias" />
+        
+        <RadioButton
+            android:id="@+id/mayor_a_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mayor_a_90_dias" />
+        
+        
+        <RadioButton
+            android:id="@+id/todas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todas" />
+        
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/fecha_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+			android:hint="@string/seleccione_una_fecha"
+            android:digits="@string/allow_digits" 
+            android:inputType="date" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/search_cobros.xml -->

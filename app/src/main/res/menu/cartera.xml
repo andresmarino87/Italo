@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/mas_filtros" 
+        android:title="@string/mas_filtros" 
+        android:icon="@drawable/lupa_con_mas"
+       	android:showAsAction="ifRoom" />
+    <item android:id="@+id/buscar" 
+        android:title="@string/buscar" 
+        android:icon="@drawable/buscar"
+       	android:showAsAction="ifRoom" />
+    <item android:id="@+id/atras" 
+        android:title="@string/atras" 
+        android:icon="@drawable/atras"
+       	android:showAsAction="ifRoom" />
+</menu>

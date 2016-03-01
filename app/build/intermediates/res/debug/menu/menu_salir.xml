@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/salir_app" 
+        android:title="@string/salir" 
+        android:icon="@drawable/salir"
+       	android:showAsAction="ifRoom">
+    </item>
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/menu_salir.xml -->

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrollView1"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/nombre_del_cliente_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_del_cliente"
+        android:textStyle="bold"
+        android:background="@drawable/input_par"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/nombre_del_cliente_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@drawable/celdas_impar"
+        android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/pedido_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pedido"
+                android:background="@drawable/input_par"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pedido_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/sector_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sector"
+                android:background="@drawable/input_impar"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sector_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_impar"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/ruta_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ruta"
+                android:background="@drawable/input_par"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ruta_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/motivo_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_impar"
+                android:text="@string/motivo"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/motivo_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_impar"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/fecha_pedido_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fecha_pedido"
+                android:background="@drawable/input_par"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fecha_pedido_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/fecha_negacion_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_impar"
+                android:text="@string/fecha_negacion"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fecha_negacion_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_impar"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/valor_pedido_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/valor_pedido"
+                android:background="@drawable/input_par"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/valor_pedido_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_par"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>

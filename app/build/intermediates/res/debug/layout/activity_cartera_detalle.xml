@@ -1,0 +1,140 @@
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/view_border"
+	android:layout_margin="10dp" 
+	    android:orientation="vertical"
+	    tools:context=".Cobros_Programados" >
+
+		<TextView
+		    android:id="@+id/view_Head"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/view_head"
+		    android:gravity="center"
+		    android:text="@string/cartera"
+		    android:textColor="@color/white"
+		    android:textSize="20sp"
+		    android:textStyle="bold" />
+
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+
+			<TextView
+		    android:id="@+id/todos_los_clientes_label"
+			android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+			android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:text="@string/todos_los_clientes" />
+			    <HorizontalScrollView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+
+		        <TableLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+		            android:layout_marginTop="5dp" >
+
+		            <TableRow
+		                android:id="@+id/tableRow0"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent" >
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="4"
+		                    android:gravity="center"
+		                    android:text=""
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+		                
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="4"
+		                    android:gravity="center"
+		                    android:text="@string/tipo_documento"
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="6"
+		                    android:gravity="center"
+		                    android:text="@string/documento"
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+
+		                <TextView
+		                    android:id="@+id/cliente_label"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="15"
+		                    android:gravity="center"
+		                    android:text="@string/cliente"
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="8"
+		                    android:gravity="center"
+		                    android:text="@string/valor"
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="8"
+		                    android:gravity="center"
+		                    android:text="@string/fecha"
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="8"
+		                    android:gravity="center"
+		                    android:text="@string/vencimiento"
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="fill_parent"
+		                    android:background="@drawable/celdas_header"
+		                    android:ems="8"
+		                    android:gravity="center"
+		                    android:text="@string/dias"
+		                    android:textColor="@color/white"
+		                    android:textStyle="bold" />
+		                </TableRow>
+		            <ListView
+		                android:id="@+id/listCartera"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:choiceMode="multipleChoice" >
+		            </ListView>
+		        </TableLayout>
+		    </HorizontalScrollView>
+		</LinearLayout>
+
+	</LinearLayout>
+<!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_cartera_detalle.xml -->

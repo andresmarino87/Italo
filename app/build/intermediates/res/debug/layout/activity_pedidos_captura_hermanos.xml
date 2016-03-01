@@ -1,0 +1,46 @@
+<HorizontalScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="10dp"
+	tools:context=".Pedidos_Captura_Hermanos" >
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <TableRow
+                        android:id="@+id/tableRow0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:id="@+id/table_head_nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="20"
+                            android:gravity="center"
+                            android:text="@string/producto"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/table_head_cantidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="21"
+                            android:gravity="center"
+                            android:text="@string/cantidad"
+			android:textColor="@color/white"
+			android:textStyle="bold" />
+		</TableRow>
+		<ListView
+			android:id="@+id/listHermanos"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:choiceMode="singleChoice" >
+		</ListView>
+	</TableLayout>
+</HorizontalScrollView><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_pedidos_captura_hermanos.xml -->

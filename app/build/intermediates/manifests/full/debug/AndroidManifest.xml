@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.italo_view"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:name="com.italo_view.Global"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.italo_view.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.italo_view.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Consultar"
+            android:label="@string/title_activity_actividad_diaria"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Menu"
+            android:label="@string/title_activity_menu__actividad_diaria_main" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Programar_Cobro_Tabs"
+            android:label="@string/title_activity_actividad_diaria" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Programar_Cobro_Pendiente"
+            android:label="@string/title_activity_actividad_diaria" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Crear"
+            android:label="@string/title_activity_actividad_diaria_crear"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="indicadores.Indicadores"
+            android:label="@string/title_activity_indicadores" >
+        </activity>
+        <activity
+            android:name="paretos.Paretos"
+            android:label="@string/title_activity_paretos" >
+        </activity>
+        <activity
+            android:name="indicadores.Indicadores_Cobros_Resumen"
+            android:label="@string/title_activity_indicadores__cobros__resumen" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente"
+            android:label="@string/title_activity_cliente" >
+        </activity>
+        <activity
+            android:name="cartera.Cartera"
+            android:label="@string/title_activity_cartera" >
+        </activity>
+        <activity
+            android:name="cartera.Cartera_Detalles"
+            android:label="@string/title_activity_cartera__detalles" >
+        </activity>
+        <activity
+            android:name="cartera.Cartera_Buscar_X_Cliente"
+            android:label="@string/title_activity_cartera__buscar__x__cliente" >
+        </activity>
+        <activity
+            android:name="pedidos_negados.Pedidos_Negados"
+            android:label="@string/title_activity_pedidos__negados" >
+        </activity>
+        <activity
+            android:name="articulos.Articulos"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_articulos" >
+        </activity>
+        <activity
+            android:name="articulos.Articulos_Detalles_Promocion"
+            android:label="@string/title_activity_articulos_detalles_descripcion" >
+        </activity>
+        <activity
+            android:name="articulos.Articulos_Detalles_Descripcion"
+            android:label="@string/title_activity_articulos__detalles__descripcion" >
+        </activity>
+        <activity
+            android:name="consignaciones.Consignaciones"
+            android:label="@string/title_activity_consignaciones" >
+        </activity>
+        <activity
+            android:name="consignaciones.Consignaciones_Adicionar"
+            android:label="@string/title_activity_consignaciones__adicionar" >
+        </activity>
+        <activity
+            android:name="consignaciones.Consignaciones_Consultar"
+            android:label="@string/title_activity_consignaciones__consultar" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Contactos"
+            android:label="@string/title_activity_cliente__contactos" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Contactos_Crear"
+            android:label="@string/title_activity_cliente__contactos__crear" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Contactos_Modificar"
+            android:label="@string/title_activity_cliente__contacto__modificar" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Horarios"
+            android:label="@string/title_activity_cliente__horarios" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Horarios_Crear"
+            android:label="@string/title_activity_cliente__horarios__crear" >
+        </activity>
+        <activity
+            android:name="com.italo_viewcliente.Cliente_Horarios_Modificar"
+            android:label="@string/title_activity_cliente__horario__modificar" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas"
+            android:label="@string/title_activity_cliente__consultas" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Pedidos"
+            android:label="@string/title_activity_cliente__consultas__pedidos" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Datos_Del_Cliente_General"
+            android:label="@string/title_activity_cliente__consultas__datos__del__cliente__general" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Datos_Del_Cliente_Financiera"
+            android:label="@string/title_activity_cliente__consultas__datos__del__cliente__financiera" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Datos_Del_Cliente_Comercial"
+            android:label="@string/title_activity_cliente__consultas__datos__del__cliente__comercial" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Historicos_Pedidos"
+            android:label="@string/title_activity_cliente__consultas__historicos__pedidos" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Historicos_Recaudos"
+            android:label="@string/title_activity_cliente__consultas__historicos__recaudos" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Historicos_Otros_Eventos"
+            android:label="@string/title_activity_cliente__consultas__historicos__devoluciones" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Otros_Eventos"
+            android:label="@string/title_activity_cliente__consultas__historicos__otros__eventos" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Extraruta"
+            android:label="@string/title_activity_actividad__diaria__ir__a__extraruta" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Sucursales"
+            android:label="@string/title_activity_cliente__sucursales" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Programar_Cobro"
+            android:label="@string/title_activity_cliente__programar__cobro" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Crear_Paso_2"
+            android:label="@string/title_activity_actividad__diaria__crear__paso_2" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Crear_Paso_3"
+            android:label="@string/title_activity_actividad__diaria__crear__paso_3" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Consultar_Motivo_No_Visita"
+            android:label="@string/title_activity_actividad__diaria__consultar__motivo__no__visita"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="visita.Visita"
+            android:label="@string/title_activity_actividad__diaria__consultar__visita"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="actividad_diaria.Actividad_Diaria_Gestiones"
+            android:label="@string/title_activity_actividad__diaria__gestiones" >
+        </activity>
+        <activity
+            android:name="registro_eventos.Registro_De_Eventos"
+            android:label="@string/title_activity_actividad__diaria__consultar__visita__registro__de__eventos" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos"
+            android:label="@string/title_activity_actividad__diaria__gestion__pedidos" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Nuevo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_actividad__diaria__gestiones__pedido__nuevo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Detalles"
+            android:label="@string/title_activity_actividad__diaria__gestiones__pedidos__detalles" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros"
+            android:label="@string/title_activity_actividad__diaria__gestiones__cobros" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Programar_Pagos"
+            android:label="@string/title_activity_actividad__diaria__gestiones__cobros__programar__pagos" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Detalles"
+            android:label="@string/title_activity_actividad__diaria__gestionar__cobros__detalles" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago"
+            android:label="@string/title_activity_actividad__diaria__gestiones__cobros__pago"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente"
+            android:label="@string/title_activity_asistente" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente_Efectividad_De_Visita"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_asistente__efectividad__de__visita" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente_Asistente_General"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_asistente__asistente__general" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente_Presupuesto_Cartera"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_gestiones__presupuesto__cartera" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente_Presupuesto_Articulos"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_asistente__presupuesto__articulos" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente_Acumulado_De_Ventas"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_asistente__acumulado__de__ventas" >
+        </activity>
+        <activity
+            android:name="com.italo_view.Indicadores_Tabs"
+            android:label="@string/title_activity_indicadores__tabs" >
+        </activity>
+        <activity
+            android:name="indicadores.Indicadores_Tab"
+            android:label="@string/title_activity_indicadores_tab" >
+        </activity>
+        <activity
+            android:name="indicadores.Indicadores_Pedidos_Resumen"
+            android:label="@string/title_activity_indicadores__resumen__pedidos" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Historicos_Tabs"
+            android:label="@string/title_activity_cliente__consultas__historicos__tabs" >
+        </activity>
+        <activity
+            android:name="cliente.Cliente_Consultas_Datos_Del_Cliente_Tabs"
+            android:label="@string/title_activity_cliente__consultas__datos__del__cliente__tabs" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Tabs"
+            android:label="@string/title_activity_actividad__diaria__gestiones__pedidos__tabs" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Encabezado"
+            android:label="@string/title_activity_actividad__diaria__gestiones__pedidos__encabezado" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Descripcion"
+            android:label="@string/title_activity_actividad__diaria__gestiones__pedidos__descripcion" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Promociones"
+            android:label="@string/title_activity_actividad__diaria__gestiones__pedidos__promociones" >
+        </activity>
+        <activity
+            android:name="consignaciones.Consignaciones_Tab"
+            android:label="@string/title_activity_consignaciones__tab" >
+        </activity>
+        <activity
+            android:name="consignaciones.Consignaciones_Efectuadas"
+            android:label="@string/title_activity_consignaciones__efectuadas" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente_Facturacion"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_asistente__facturacion" >
+        </activity>
+        <activity android:name="org.achartengine.chartdemo.demo.chart.XYChartBuilder" />
+        <activity android:name="org.achartengine.chartdemo.demo.chart.PieChartBuilder" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name="com.italo_view.GeneratedChartDemo" />
+        <activity
+            android:name="cobros.Cobros_Del_Dia"
+            android:label="@string/title_activity_cobros__del__dia" >
+        </activity>
+        <activity
+            android:name="visita.Visita_Tabs"
+            android:label="@string/title_activity_visita__tabs" >
+        </activity>
+        <activity
+            android:name="visita.Visita_Sucursales"
+            android:label="@string/title_activity_visita__sucursales" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Tabs"
+            android:label="@string/title_activity_cobros__tabs" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Del_Dia_Consultas"
+            android:label="@string/title_activity_cobros__del__dia__consultas" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Tabs"
+            android:label="@string/title_activity_cobros__pago__tabs" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Tipo"
+            android:label="@string/title_activity_cobros__tipo__pago" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Resumen"
+            android:label="@string/title_activity_cobros__pago__resumen" >
+        </activity>
+        <activity
+            android:name="registro_eventos.Registro_De_Eventos_Tabs"
+            android:label="@string/title_activity_registro_de__eventos" >
+        </activity>
+        <activity
+            android:name="registro_eventos.Registro_De_Eventos_Visita"
+            android:label="@string/title_activity_registro__de__eventos__visita" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Lista"
+            android:label="@string/title_activity_pedido__lista" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Detalles_Tabs"
+            android:label="@string/title_activity_pedidos__detalles__tabs" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Detalles_Lista"
+            android:label="@string/title_activity_pedidos__detalles__lista" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Captura_Finalizar_Tabs"
+            android:label="@string/title_activity_pedidos__captura__finalizar" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Captura_Finalizar_Promo"
+            android:label="@string/title_activity_pedidos__captura__finalizar__promo" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Captura_Finalizar_Temp"
+            android:label="@string/title_activity_pedidos__captura__finalizar__temp" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Captura_Finalizar_SinPedir"
+            android:label="@string/title_activity_pedidos__captura__finalizar__sin_pedir"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Captura"
+            android:label="@string/title_activity_pedido__captura__tabs" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Captura_Hermanos"
+            android:label="@string/title_activity_pedido__captura__hermanos" >
+        </activity>
+        <activity
+            android:name="pedidos.Pedidos_Captura_Primos"
+            android:label="@string/title_activity_pedido__captura__primos" >
+        </activity>
+
+        <service
+            android:name="easysync.EasySyncService"
+            android:screenOrientation="unspecified" >
+        </service>
+        <service
+            android:name="easygps.EasyGpsItaloService"
+            android:screenOrientation="unspecified" >
+        </service>
+
+        <activity
+            android:name="cobros.Cobros_Pago_Efectivo"
+            android:label="@string/title_activity_cobros__pago__efectivo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Cheque"
+            android:label="@string/title_activity_cobros__pago__cheque__tercero__dia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Doc_Negativo"
+            android:label="@string/title_activity_cobros__pago__doc__negativo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Cheque_Postfechado"
+            android:label="@string/title_activity_cobros__pago__cheque__postfechado" >
+        </activity>
+        <activity
+            android:name="articulos.Image_zoom"
+            android:label="@string/title_activity_image_zoom" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Transferencia"
+            android:label="@string/title_activity_cobros__pago__transferencia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Descuento_Pronto_Pago"
+            android:label="@string/title_activity_cobro__pago__descuento__pronto__pago" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Pago_Consignaciones"
+            android:label="@string/title_activity_cobros__pago__consignaciones"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cobros.Cobros_Sincronizados"
+            android:label="@string/title_activity_cobros__sincronizados" >
+        </activity>
+        <activity
+            android:name="visita.Visita_Menu"
+            android:label="@string/title_activity_visita__menu" >
+        </activity>
+        <activity
+            android:name="asistente.Asistente_Presupuesto_Ventas"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_asistente_presupuesto_ventas" >
+        </activity>
+        <activity
+            android:name="cartera.Cartera_Resumen_Pagos"
+            android:label="@string/title_activity_cartera__resumen__pagos" >
+        </activity>
+        <activity android:name="cobros_programados.Cobros_Programados" />
+        <activity android:name="cobros_programados.Programar_Cobro" />
+    </application>
+
+</manifest>

@@ -1,0 +1,393 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/view_border"
+    tools:context=".Cartera" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	<TextView
+        android:id="@+id/view_Head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/cartera"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_Head"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+       
+
+	<TextView
+	    android:id="@+id/todos_los_clientes_label"
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/todos_los_clientes" />
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/distrito_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/distrito"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/distrito_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+         </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+	
+        <TextView
+            android:id="@+id/subdistrito_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/subdistrito"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/subdistrito_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+     </LinearLayout>
+     
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+	
+        <TextView
+            android:id="@+id/sector_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sector"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sector_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+     </LinearLayout>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+	
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tipo_documento"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/tipo_doc_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+     </LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+	
+	<Button
+                android:id="@+id/ejecutar_button"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+            android:layout_gravity="center"
+                android:text="@string/ejecutar" />
+	
+	 </LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+	
+        <LinearLayout
+            android:id="@+id/total"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/todas" />
+
+            <TextView
+                android:id="@+id/todas_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menor_a_30"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/menor_a_30_dias" />
+
+            <TextView
+                android:id="@+id/menor_a_30_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mayor_a_30"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:text="@string/mayor_a_30_dias" />
+
+            <TextView
+                android:id="@+id/mayor_a_30_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mayor_a_60"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:text="@string/mayor_a_60_dias" />
+
+            <TextView
+                android:id="@+id/mayor_a_60_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mayor_a_90"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/mayor_a_90_dias" />
+
+            <TextView
+                android:id="@+id/mayor_a_90_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/total_vencidas"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/total_vencidas" />
+
+            <TextView
+                android:id="@+id/total_vencidas_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/total_al_dia"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/total_al_dia" />
+
+            <TextView
+                android:id="@+id/total_al_dia_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/proximas_a_vencer"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_gris"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/proximas_a_vencer" />
+
+            <TextView
+                android:id="@+id/proximas_a_vencer_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+        
+                
+        
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_cartera2.xml -->

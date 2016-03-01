@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/reopen"
+        android:icon="@drawable/reopen"
+        android:title="@string/reabrir_actividad"
+       	android:showAsAction="always" />	
+    <item android:id="@+id/indicadores" 
+        android:title="@string/indicadores" 
+        android:icon="@drawable/indicadores"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/mas_opciones"
+		android:title="@string/opciones"
+    	android:icon="@drawable/mas_opciones"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    <item android:id="@+id/ir_a_extrarutas"
+		        android:title="@string/agregar_extrarutas"
+		       	android:showAsAction="collapseActionView" />	
+			<item android:id="@+id/programar_cobro"
+		        android:title="@string/programar_cobro"
+		       	android:showAsAction="collapseActionView" />	
+	   	    <item android:id="@+id/finalizar_actividad" 
+    		    android:title="@string/finalizar_actividad" 
+    		    android:icon="@drawable/door_close"
+    		    android:showAsAction="ifRoom" />
+		</menu>
+	</item>	
+    <item android:id="@+id/menu_general"
+        android:icon="@drawable/menu"
+        android:title="@string/reabrir_actividad"
+       	android:showAsAction="always" />	
+    <item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+</menu>

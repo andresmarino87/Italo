@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--     <item android:id="@+id/menu" 
+        android:title="@string/menu" 
+        android:icon="@drawable/menu"
+		android:showAsAction="always"/> -->
+	<item android:id="@+id/programar_cobro" 
+	    android:showAsAction="always" 
+	    android:icon="@drawable/prog_cobro" 
+	    android:title="@string/programar_cobro">
+	</item><item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/cartera_detalles.xml -->

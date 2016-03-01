@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/view_border" 
+    tools:context=".Asistente"
+    android:layout_margin="10dp">
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView
+        android:id="@+id/view_Head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/asistente"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+	<Button
+	    android:id="@+id/presupuesto_de_ventas"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignLeft="@+id/asistente_general"
+	    android:layout_below="@+id/asistente_general"
+	    android:gravity="left"
+	    android:text="@string/presupuesto_de_ventas" />
+
+	<Button
+	    android:id="@+id/acumulado_presupuesto_ventas"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/presupuesto_de_ventas"
+	    android:gravity="left"
+	    android:text="@string/acumulado_presupuesto_ventas" />
+
+	<Button
+	    android:id="@+id/presupuesto_articulos"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignLeft="@+id/acumulado_presupuesto_ventas"
+	    android:layout_below="@+id/acumulado_presupuesto_ventas"
+	    android:gravity="left"
+	    android:text="@string/presupuesto_articulos" />
+
+	<Button
+	    android:id="@+id/facturacion_impuesto"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignLeft="@+id/presupuesto_cartera"
+	    android:layout_below="@+id/presupuesto_cartera"
+	    android:gravity="left"
+	    android:text="@string/facturacion_impuesto" />
+
+	<Button
+	    android:id="@+id/asistente_general"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/efectividad_de_visita"
+	    android:gravity="left"
+	    android:text="@string/asistente_general" />
+
+	<Button
+	    android:id="@+id/presupuesto_cartera"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignLeft="@+id/presupuesto_articulos"
+	    android:layout_below="@+id/presupuesto_articulos"
+	    android:gravity="left"
+	    android:text="@string/presupuesto_cartera" />
+
+	<Button
+	    android:id="@+id/efectividad_de_visita"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/view_Head"
+	    android:layout_marginTop="10dp"
+	    android:gravity="left"
+	    android:text="@string/efectividad_de_visita" />
+                            
+</RelativeLayout>
+</ScrollView>

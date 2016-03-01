@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <CalendarView
+        android:id="@+id/date_picker"
+        android:layout_width="match_parent"
+        android:showWeekNumber="false"
+		android:layout_height="500dp" />
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/date_picker.xml -->

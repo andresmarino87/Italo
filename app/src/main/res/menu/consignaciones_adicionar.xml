@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/menu"
+        android:icon="@drawable/menu"
+        android:title="@string/menu"
+       	android:showAsAction="always" />
+
+	<item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+
+    <item android:id="@+id/mas_opciones"
+		android:title="@string/opciones"
+    	android:icon="@drawable/mas_opciones"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    <item android:id="@+id/guardar"
+		        android:title="@string/guardar"
+		       	android:showAsAction="collapseActionView" />	
+			<item android:id="@+id/eliminar"
+		        android:title="@string/eliminar"
+		       	android:showAsAction="collapseActionView" />	
+		</menu>
+	</item>
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/consultar"
+        android:title="@string/consultar"
+       	android:showAsAction="always" />    
+    <item android:id="@+id/horarios"
+        android:title="@string/horarios"
+       	android:showAsAction="always" />
+    <item android:id="@+id/contactos"
+        android:title="@string/contactos"
+       	android:showAsAction="always" />
+    <item android:id="@+id/sucursales"
+        android:title="@string/sucursales"
+       	android:showAsAction="always" />
+    <item android:id="@+id/referencias"
+        android:title="@string/referencias"
+       	android:showAsAction="always" />
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/menu_consultar_horarios_contactos_sucursales_referencias.xml -->

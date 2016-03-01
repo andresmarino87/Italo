@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  	<item android:id="@+id/adicionar_pago"
+        android:title="@string/adicionar_pago"
+       	android:showAsAction="always" />
+    <item android:id="@+id/detalle_documento"
+        android:title="@string/detalle_documento"
+       	android:showAsAction="always" />
+    <item android:id="@+id/programar_pago"
+        android:title="@string/programar_pago"
+       	android:showAsAction="always" />
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/menu_adicionar_pago_detalle_documento_programar_pago.xml -->

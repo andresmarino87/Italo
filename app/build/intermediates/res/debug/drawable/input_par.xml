@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+   			<gradient
+				android:endColor="@color/ghostwhite"
+				android:startColor="@color/ghostwhite"
+				android:angle="270" />
+			<stroke
+				android:width="0dp"
+				android:color="@color/black" />
+			<corners
+				android:radius="0dp" />
+			<padding
+				android:left="10dp"
+				android:top="5dp"
+				android:right="10dp"
+				android:bottom="5dp" />
+		</shape>
+	</item>
+	<item android:state_activated="true">
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+			<gradient
+				android:endColor="@color/royalblue2"
+				android:startColor="@color/royalblue2"
+				android:angle="270" />
+			<stroke
+				android:width="0dp"
+				android:color="@color/black" />
+			<corners
+				android:radius="0dp" />
+			<padding
+				android:left="10dp"
+				android:top="5dp"
+				android:right="10dp"
+				android:bottom="5dp" />
+		</shape>
+   </item>
+   	<item android:state_activated="false">
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+			<gradient
+				android:endColor="@color/white"
+				android:startColor="@color/white"
+				android:angle="270" />
+			<stroke
+				android:width="0dp"
+				android:color="@color/black" />
+			<corners
+				android:radius="0dp" />
+			<padding
+				android:left="10dp"
+				android:top="5dp"
+				android:right="10dp"
+				android:bottom="5dp" />
+			
+		</shape>
+   </item>
+ </selector><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/drawable/input_par.xml -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/celdas_header"
+		android:text="@string/observaciones"
+		android:textColor="@color/white"
+		android:textStyle="bold" />
+	<EditText
+		android:id="@+id/observaciones_input"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:digits="@string/allow_digits" 
+		android:background="@drawable/celdas"
+		android:inputType="textMultiLine"
+		android:maxLength="150" />
+</LinearLayout>
+<!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/eventos_modificar_simple.xml -->

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout
+    	android:layout_width="match_parent"
+        android:layout_height="35dp" >
+		<TextView
+        	android:layout_width="0dip"
+            android:layout_height="match_parent"
+			android:layout_weight="1"
+            android:text="@string/valor_a_recaudar"
+ 		    android:gravity="center_vertical|left"
+            android:textStyle="bold"
+            android:background="@drawable/input_par" />
+		<TextView
+        	android:id="@+id/valor_a_recaudar_abono_input"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:text=""
+		    android:gravity="center_vertical|left"
+            android:background="@drawable/celdas_par" />
+	</LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/motivo_abono"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_impar" />
+
+                <Spinner
+                    android:id="@+id/motivo_abono_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/guia_devolucion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/guia_devolucion"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_par" />
+
+                <EditText
+                    android:id="@+id/guia_devolucion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint=""
+					android:inputType="number"
+					android:maxLength="12"
+		            android:gravity="center_vertical|left" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fecha_guia_devolucion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/fecha_guia_devolucion"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_impar" />
+
+                <TextView
+                    android:id="@+id/fecha_guia_devolucion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint="@string/seleccione_una_fecha"
+					android:maxLength="12"
+					android:background="@drawable/celdas_impar" 
+		            android:gravity="center_vertical|left" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/numero_devolucion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/numero_devolucion"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_par" />
+
+                <EditText
+                    android:id="@+id/numero_devolucion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint=""
+					android:maxLength="15"
+		            android:gravity="center_vertical|left" />
+
+            </LinearLayout>
+           
+            <LinearLayout
+                android:id="@+id/fecha_devolucion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/fecha_devolucion"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_impar" />
+
+                <TextView
+                    android:id="@+id/fecha_devolucion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint="@string/seleccione_una_fecha"
+					android:maxLength="12"
+					android:background="@drawable/celdas_impar" 
+					android:gravity="center_vertical|left" />
+
+            </LinearLayout>
+           
+            <LinearLayout
+                android:id="@+id/numero_solicitud_nc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/numero_solicitud_nc"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_par" />
+
+                <EditText
+                    android:id="@+id/numero_solicitud_nc_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint=""
+					android:inputType="number"
+					android:maxLength="12"
+		            android:gravity="center_vertical|left" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/fecha_solicitud_nc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/fecha_solicitud_nc"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_impar" />
+
+                <TextView
+                    android:id="@+id/fecha_solicitud_nc_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint="@string/seleccione_una_fecha"
+					android:background="@drawable/celdas_impar" 
+					android:maxLength="12"
+		            android:gravity="center_vertical|left" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/fecha_cancela_saldo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/fecha_cancela_saldo"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_par" />
+
+                <TextView
+                    android:id="@+id/fecha_cancela_saldo_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint="@string/seleccione_una_fecha"
+					android:background="@drawable/celdas_par" 
+					android:maxLength="12"
+		            android:gravity="center_vertical|left" />
+            </LinearLayout>
+
+			<LinearLayout
+                android:id="@+id/observaciones_abono_layout"
+                android:layout_width="match_parent"
+                android:layout_height="105dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/observaciones"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_impar" />
+
+                <EditText
+                    android:id="@+id/observaciones_abono_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint=""
+					android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789¿?¡!:,.[]()$#-_/*+ "
+					android:maxLength="219"
+		            android:gravity="center_vertical|left" />
+            </LinearLayout>
+			
+			<LinearLayout
+                android:id="@+id/numero_memo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/numero_memo"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_par" />
+
+                <EditText
+                    android:id="@+id/numero_memo_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint=""
+					android:inputType="number"
+					android:maxLength="12"
+		            android:gravity="center_vertical|left" />
+            </LinearLayout>
+			
+			<LinearLayout
+                android:id="@+id/fecha_memo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/fecha_memo"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_impar" />
+
+                <TextView
+                    android:id="@+id/fecha_memo_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint="@string/seleccione_una_fecha"
+					android:maxLength="12"
+					android:background="@drawable/celdas_impar" 
+		            android:gravity="center_vertical|left" />
+            </LinearLayout>
+			
+			<LinearLayout
+                android:id="@+id/fecha_seguimiento_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+                    android:text="@string/fecha_seguimiento"
+ 		            android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:background="@drawable/input_par" />
+
+                <TextView
+                    android:id="@+id/fecha_seguimiento_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:hint="@string/seleccione_una_fecha"
+					android:maxLength="12"
+					android:background="@drawable/celdas_par" 
+		            android:gravity="center_vertical|left" />
+            </LinearLayout>
+			
+	<LinearLayout
+    	android:layout_width="match_parent"
+        android:layout_height="35dp" >
+		<TextView
+        	android:layout_width="0dip"
+            android:layout_height="match_parent"
+			android:layout_weight="1"
+            android:text="@string/saldo_pendiente"
+ 	        android:gravity="center_vertical|left"
+            android:textStyle="bold"
+            android:background="@drawable/input_impar" />
+        <TextView
+        	android:id="@+id/saldo_pendiente"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+			android:background="@drawable/celdas_impar"	
+			android:text="" />
+	</LinearLayout>
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/abono_layout.xml -->

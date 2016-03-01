@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+	    android:layout_margin="10dp"
+	    android:background="@drawable/view_border"
+    	tools:context=".Cobros_Pago"  >
+                <TextView
+                    android:id="@+id/menu_actividad_diaria_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_head"
+                    android:gravity="center"
+                    android:text="@string/pago"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    tools:context=".Cobros_Pago" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/input_par"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/cliente"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nombre_del_cliente_input"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/celdas_par"
+                            android:gravity="center_vertical|left" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/input_impar"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/numero_del_pago"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/numero_pago_input"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/celdas_impar"
+                            android:gravity="center_vertical|left" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="10dp" >
+
+                        <TableLayout
+                            android:id="@+id/table"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="12"
+                                    android:gravity="center"
+                                    android:text="@string/tipo_documento"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="8"
+                                    android:gravity="center"
+                                    android:text="@string/numero_de_documento"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="8"
+                                    android:gravity="center"
+                                    android:text="@string/fecha_factura"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="8"
+                                    android:gravity="center"
+                                    android:text="@string/fecha_de_vencimiento"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/celdas_header"
+                                    android:ems="8"
+                                    android:gravity="center"
+                                    android:text="@string/dias_de_vencimiento"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <ListView
+                                android:id="@+id/listFacturas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:choiceMode="singleChoice" >
+                            </ListView>
+                        </TableLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/input_par"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/valor_documentos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/valor_documentos_input"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/celdas_par"
+                            android:gravity="center_vertical|left" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/input_impar"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/descuento_pronto_pago"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/radios"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/input_impar"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/pronto_pago_radio_si"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.2"
+                                android:ems="5"
+                                android:text="@string/si" />
+
+                            <RadioButton
+                                android:id="@+id/pronto_pago_radio_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.2"
+                                android:checked="true"
+                                android:ems="5"
+                                android:text="@string/no" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/pronto_pago_input"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/celdas_impar"
+                            android:gravity="center_vertical|left" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/input_par"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/valor_a_recaudar"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/valor_a_recaudar_input"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/celdas_par"
+                            android:gravity="center_vertical|left" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/view_head"
+                            android:gravity="center"
+                            android:text="@string/forma_de_pago"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/buttonBarStyle" >
+
+                            <Button
+                                android:id="@+id/efectivo_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								style="?android:attr/buttonBarButtonStyle"
+								android:gravity="center_vertical"
+                                android:text="@string/efectivo" />
+							<Button
+                                android:id="@+id/consignacion_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								android:gravity="center_vertical"
+								style="?android:attr/buttonBarButtonStyle"
+                                android:text="@string/consignacion"/>
+                            <Button
+                                android:id="@+id/transferencia_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								android:gravity="center_vertical"
+								style="?android:attr/buttonBarButtonStyle"
+                                android:text="@string/transferencia"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             style="?android:attr/buttonBarStyle" >
+
+                            <Button
+                                android:id="@+id/cheque_al_dia_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								android:gravity="center_vertical"
+								style="?android:attr/buttonBarButtonStyle"
+                                android:text="@string/cheque_al_dia" />
+
+                            <Button
+                                android:id="@+id/cheque_postfechado_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								android:gravity="center_vertical"
+								style="?android:attr/buttonBarButtonStyle"
+                                android:text="@string/cheque_postfechado" />
+
+                            <Button
+                                android:id="@+id/cheque_tercero_al_dia_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								android:gravity="center_vertical"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:text="@string/cheque_tercero_al_dia" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/buttonBarStyle" >
+
+                            <Button
+                                android:id="@+id/cheque_tercero_postfechado_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								android:gravity="center_vertical"
+								style="?android:attr/buttonBarButtonStyle"
+                                android:text="@string/cheque_tercero_postfechado" />
+
+							<Button
+                                android:id="@+id/doc_negativo_parcial_a_descontar_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16sp"
+								android:gravity="center_vertical"
+								style="?android:attr/buttonBarButtonStyle"
+                                android:text="@string/doc_neg_parcial_a_descontar" />
+                        </LinearLayout>
+                    </LinearLayout>
+		<LinearLayout
+        	android:id="@+id/obs_layout"
+            android:layout_width="fill_parent"
+           	android:layout_height="wrap_content" >
+            <TextView
+				android:id="@+id/obs_label"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="center_vertical|left"
+                android:text="@string/observaciones"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/observacion_radio"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/si_obs_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/si" />
+            <RadioButton
+                android:id="@+id/no_obs_input"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:checked="true"
+            	android:text="@string/no" />
+			</RadioGroup>
+			<ImageView
+                android:id="@+id/guardar_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/save"
+        		android:contentDescription="@string/guardar" />
+		</LinearLayout>
+		<EditText
+    		android:id="@+id/obs_input"
+        	android:layout_width="fill_parent"
+        	android:layout_height="150dp"
+            android:background="@drawable/celdas"
+			android:digits="@string/allow_digits" 
+			android:inputType="textMultiLine"
+            android:maxLength="219"
+			android:visibility="gone" />
+	</LinearLayout>
+</LinearLayout>
+
+
+<!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_cobros_pago.xml -->

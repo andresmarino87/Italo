@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+        xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/celdas"
+         >
+        <TextView
+            android:id="@+id/row_nombre_input"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical|left"
+            android:textColor="@drawable/text_selector" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             >
+
+            <ImageButton
+                android:id="@+id/menos"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:contentDescription="@string/menos"
+                android:src="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/cantidad_input"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageButton
+                android:id="@+id/mas"
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/mas"
+                android:src="@drawable/plus" />
+
+        </LinearLayout>
+</TableRow>

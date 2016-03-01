@@ -1,0 +1,259 @@
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        android:layout_margin="10dp"
+	    android:background="@drawable/view_border"
+	    tools:context=".Articulos_Detalles_Promociones.java" >
+
+	    <TextView
+	        android:id="@+id/editText5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/view_head"
+	        android:gravity="center"
+	        android:text="@string/articulos"
+	        android:textColor="@color/white"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/editText5"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="vertical"
+	        android:padding="10dp" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/descripcion"
+	                android:layout_width="0dip"
+	                android:layout_height="30dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/boton_no_seleccionado_tab_style"
+	                android:text="@string/descripcion"
+	                android:textSize="20sp"
+	                android:textStyle="bold" />
+
+	            <Button
+	                android:id="@+id/promociones"
+	                android:layout_width="0dip"
+	                android:layout_height="30dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/boton_seleccionado_tab_style"
+	                android:text="@string/promociones"
+	                android:textColor="@color/white"
+	                android:textSize="20sp"
+	                android:textStyle="bold" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:id="@+id/linearLayout2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp" >
+
+	            <TextView
+	                android:id="@+id/nombre_producto_input"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text=""
+	                android:textSize="18sp" />
+
+	            <TextView
+	                android:id="@+id/precio_total_input"
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.4"
+	                android:text=""
+	                android:textColor="@color/cerulean_blue"
+	                android:textSize="23sp" />
+	        </LinearLayout>
+
+	        <ImageView
+	            android:id="@+id/image_input"
+	            android:layout_width="fill_parent"
+	            android:layout_height="500dp"
+	            android:layout_marginTop="10dp"
+	            android:scaleType="fitCenter"
+	            android:contentDescription="@string/producto" />
+
+	        <LinearLayout
+	            android:id="@+id/linearLayout1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/fecha_ini_toma_label"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1"
+	                    android:textStyle="bold"
+	                    android:text="@string/fecha_inicial_toma_de_pedido"
+	                    android:background="@drawable/input_par"
+	                    android:textSize="14sp" />
+
+	                <TextView
+	                    android:id="@+id/fecha_ini_toma_input"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1"
+	                    android:background="@drawable/celdas_par"
+	                    android:text="" />
+
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/fecha_fin_toma_label"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1"
+	                    android:text="@string/fecha_final_toma_de_pedido"
+	                    android:background="@drawable/input_impar"
+	                    android:textSize="14sp"
+	                    android:textStyle="bold" />
+
+	                <TextView
+	                    android:id="@+id/fecha_fin_toma_input"
+	                    android:layout_width="0dip"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1"
+	                    android:background="@drawable/celdas_impar"
+	                    android:text="" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <HorizontalScrollView
+	            android:id="@+id/horizontalScrollView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="10dp" >
+	                <TableLayout
+	                    android:id="@+id/tableLayout1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent">
+
+	                    <TableRow
+	                        android:id="@+id/tableRow0"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="fill_parent" >
+
+	                        <TextView
+	                            android:id="@+id/table_head_codigo"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="7"
+	                            android:text="@string/n_prom"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+
+	                        <TextView
+	                            android:id="@+id/editText2"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="10"
+	                            android:text="@string/tipo_prom"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+<!-- 
+	                        <TextView
+	                            android:id="@+id/editText3"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="5"
+	                            android:text="@string/cant_inicial"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+
+	                        <TextView
+	                            android:id="@+id/editText4"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="5"
+	                            android:text="@string/cant_final"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+ -->
+	                        <TextView
+	                            android:id="@+id/editText9"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="7"
+	                            android:text="@string/porc_descuento"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+
+	                        <TextView
+	                            android:id="@+id/editText6"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="5"
+	                            android:text="@string/cant_req"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+
+	                        <TextView
+	                            android:id="@+id/editText7"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="5"
+	                            android:text="@string/cant_bonif"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+
+	                        <TextView
+	                            android:id="@+id/editText8"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:background="@drawable/celdas_header"
+	                            android:gravity="center"
+	                            android:ems="5"
+	                            android:text="@string/art_bonif"
+	                            android:textColor="@color/white"
+	                            android:textStyle="bold" />
+	                    </TableRow>
+
+	                    <ListView
+	                        android:id="@+id/listPromos"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:choiceMode="singleChoice" >
+	                    </ListView>
+
+	                </TableLayout>
+	        </HorizontalScrollView>
+	    </LinearLayout>
+</RelativeLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_articulos_detalles_promocion.xml -->

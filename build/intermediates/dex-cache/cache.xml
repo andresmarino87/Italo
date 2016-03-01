@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/kate/Dropbox/Deveps/Android/Italo/app/libs/achartengine-1.1.0-rc2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="abcc44f100626232dee90d5ef7f0b2a1941508d0">
+        <dex dex="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/pre-dexed/debug/achartengine-1.1.0-rc2-dce3040508044d9b4bb37b0e2908ab5590aad827.jar" />
+    </item>
+    <item
+        jar="/Users/kate/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-d705c81f6dab633ec48b3ea986efb76eb51a037a.jar" />
+    </item>
+    <item
+        jar="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/pre-dexed/debug/classes-f49d26db0159ba6884d2e6ae1f51079f462b76b9.jar" />
+    </item>
+    <item
+        jar="/Users/kate/Dropbox/Deveps/Android/Italo/app/libs/commons-lang3-3.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="905075e6c80f206bbe6cf1e809d2caa69f420c76">
+        <dex dex="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/pre-dexed/debug/commons-lang3-3.1-2372a1806f0df6863696f46bde2728b5716aca7b.jar" />
+    </item>
+    <item
+        jar="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-f00b456da971db7518d655632a93123af45580cb.jar" />
+    </item>
+    <item
+        jar="/Users/kate/Dropbox/Deveps/Android/Italo/app/libs/graphview-3.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="12c054c623caacf9db0e4b9719b3ebb0e85959aa">
+        <dex dex="/Users/kate/Dropbox/Deveps/Android/Italo/app/build/intermediates/pre-dexed/debug/graphview-3.1-b713d160e514c6fd48ddea76536b95403b0f0ef0.jar" />
+    </item>
+
+</items>

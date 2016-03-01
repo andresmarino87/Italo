@@ -1,0 +1,78 @@
+    <LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/view_border"
+        tools:context=".Cliente_Sucursales" >
+
+        <TextView
+            android:id="@+id/view_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/sucursales"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cliente_name_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/celdas_header"
+                android:gravity="center"
+                android:text="@string/cuenta"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/celdas_header"
+                android:gravity="center"
+                android:text="@string/sucursal"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/celdas_header"
+                android:gravity="center"
+                android:text="@string/sector"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listSucursales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"  >
+        </ListView>
+
+    </LinearLayout>

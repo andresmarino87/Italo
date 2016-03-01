@@ -1,0 +1,425 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Indicadores" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/fecha" />
+
+                <TextView
+                    android:id="@+id/fecha_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/clientes_totales" />
+
+                <TextView
+                    android:id="@+id/clientes_totales_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/clientes_en_ruta" />
+
+                <TextView
+                    android:id="@+id/clientes_en_ruta_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/clientes_en_extraruta" />
+
+                <TextView
+                    android:id="@+id/clientes_en_extraruta_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+				android:id="@+id/clientes_visitados_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/clientes_visitados_label"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/mas_clientes_visitados" />
+
+                <TextView
+                    android:id="@+id/clientes_visitados_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clientes_con_gestion_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/raya_clientes_con_gestion" />
+
+                <TextView
+                    android:id="@+id/clientes_con_gestion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clientes_con_no_gestion_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/raya_clientes_con_no_gestion" />
+
+                <TextView
+                    android:id="@+id/clientes_con_no_gestion_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/clientes_no_visita" />
+
+                <TextView
+                    android:id="@+id/clientes_no_visita_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/clientes_pendientes" />
+
+                <TextView
+                    android:id="@+id/clientes_pendientes_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/efectividad_visitas" />
+
+                <TextView
+                    android:id="@+id/efectividad_visitas_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/cumplimiento" />
+
+                <TextView
+                    android:id="@+id/cumplimiento_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/venta_proyectada" />
+
+                <TextView
+                    android:id="@+id/venta_proyectada_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/venta_real" />
+
+                <TextView
+                    android:id="@+id/venta_real_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/venta_pendiente" />
+
+                <TextView
+                    android:id="@+id/venta_pendiente_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/cobro_proyectado" />
+
+                <TextView
+                    android:id="@+id/cobro_proyectado_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:textStyle="bold"
+                    android:background="@drawable/input_impar"
+                    android:text="@string/cobro_real" />
+
+                <TextView
+                    android:id="@+id/cobro_real_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_impar"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+ 					android:textStyle="bold"
+                    android:background="@drawable/input_par"
+                    android:text="@string/cobro_pendiente" />
+
+                <TextView
+                    android:id="@+id/cobro_pendiente_input"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="right"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/celdas_header" >
+
+        <TextView
+            android:id="@+id/observaciones_pedido_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/observaciones_pedido"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/observaciones_pedido_borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/borrar"
+            android:gravity="right"
+            android:src="@drawable/trash_can" />
+
+        <RadioGroup
+            android:id="@+id/obs_pedido_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/obs_pedido_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/si" />
+
+            <RadioButton
+                android:id="@+id/obs_pedido_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/no" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/observaciones_pedido_input"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:digits="@string/allow_digits" 
+        android:inputType="textMultiLine"
+        android:maxLength="438" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/celdas_header" >
+
+        <TextView
+            android:id="@+id/observaciones_factura_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/observaciones_factura"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/observaciones_factura_borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/borrar"
+            android:gravity="right"
+            android:src="@drawable/trash_can" />
+
+        <RadioGroup
+            android:id="@+id/obs_factura_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/obs_factura_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/si" />
+
+            <RadioButton
+                android:id="@+id/obs_factura_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/no" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/observaciones_factura_input"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:digits="@string/allow_digits" 
+        android:inputType="textMultiLine"
+        android:maxLength="146" />
+
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/observaciones_popout.xml -->

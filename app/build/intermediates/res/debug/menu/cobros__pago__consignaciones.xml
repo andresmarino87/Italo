@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/limpiar" 
+        android:title="@string/limpiar" 
+        android:icon="@drawable/borrar"
+		android:showAsAction="always"/>
+    <item android:id="@+id/guardar" 
+        android:title="@string/guardar" 
+        android:icon="@drawable/save"
+		android:showAsAction="always"/>
+    <item android:id="@+id/adicionar" 
+        android:title="@string/adicionar" 
+        android:icon="@drawable/add_pedido"
+		android:showAsAction="always"/>
+	<item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+</menu>
+<!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/cobros__pago__consignaciones.xml -->

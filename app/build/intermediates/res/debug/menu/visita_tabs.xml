@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    	<item android:id="@+id/menu_general"
+		android:title="@string/menu_general"
+    	android:icon="@drawable/visita_menu_icon"
+		android:showAsAction="always" />	
+    
+    <item android:id="@+id/consulta_opciones"
+		android:title="@string/consultas"
+    	android:icon="@drawable/cliente_consultas"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    <item android:id="@+id/consultas_pedidos"
+		        android:title="@string/pedidos"
+		       	android:showAsAction="collapseActionView" />
+		    <item android:id="@+id/consultas_cobros"
+		        android:title="@string/cobros"
+		       	android:showAsAction="collapseActionView" />
+		    <item android:id="@+id/consultas_datos_del_clientes"
+		        android:title="@string/datos_del_cliente"
+		       	android:showAsAction="collapseActionView" />
+		    <item android:id="@+id/consultas_cartera"
+		        android:title="@string/cartera"
+		       	android:showAsAction="collapseActionView" />	
+ 			<item android:id="@+id/consultas_historicos_visitas"
+		        android:title="@string/historicos_visitas"
+			    android:showAsAction="collapseActionView" />
+		</menu>
+	</item>	
+	<item android:id="@+id/mas_opciones"
+		android:title="@string/opciones"
+    	android:icon="@drawable/mas_opciones"
+		android:showAsAction="always" >	
+		<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+		    <item android:id="@+id/gestiones_pedidos"
+		        android:title="@string/pedidos"
+		       	android:showAsAction="collapseActionView" />	
+		    <item android:id="@+id/gestiones_cobros"
+		        android:title="@string/cobros"
+		       	android:showAsAction="collapseActionView" />	
+ 		    <item android:id="@+id/gestiones_registro_de_eventos"
+		        android:title="@string/registro_de_eventos"
+		       	android:showAsAction="collapseActionView" />	
+			<item android:id="@+id/finalizar_visita"
+		        android:title="@string/finalizar_visita"
+			    android:showAsAction="collapseActionView" />		
+		</menu>
+	</item>	
+<!--     <item android:id="@+id/menu" 
+        android:title="@string/menu" 
+        android:icon="@drawable/menu"
+		android:showAsAction="always"/>
+	<item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" /> -->
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/visita_tabs.xml -->

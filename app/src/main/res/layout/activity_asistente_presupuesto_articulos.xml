@@ -1,0 +1,232 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_border"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+	tools:context=".Asistente_Presupuesto_Articulos" >
+
+        <TextView
+            android:id="@+id/view_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/presupuesto_articulos"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/sector"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sector_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/porcentaje"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/porcentaje_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="6"
+            android:background="@drawable/celdas"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar_por"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/buscar_por_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/filtros_articulos_string_array" />
+
+        <AutoCompleteTextView
+            android:id="@+id/text_input"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/celdas"
+            android:digits="@string/allow_digits"
+            android:ems="10"
+            android:hint="@string/buscar" />
+
+        <Button
+            android:id="@+id/buscar_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buscar" />
+
+    </LinearLayout>
+</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/por_ventas_button"
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_seleccionado_tab_style"
+                    android:text="@string/por_ventas"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/por_unidades_button"
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_no_seleccionado_tab_style"
+                    android:text="@string/por_unidades"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/unidades_ventas_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/total_registros"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/input_registros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/input_gris"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="5"
+                            android:gravity="center"
+                            android:text="@string/codigo"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="15"
+                            android:gravity="center"
+                            android:text="@string/articulo"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="7"
+                            android:gravity="center"
+                            android:text="@string/presupuesto"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/unidades_ventas_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="7"
+                            android:gravity="center"
+                            android:text="@string/ventas"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/celdas_header"
+                            android:ems="7"
+                            android:gravity="center"
+                            android:text="@string/porc_cumplim"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <ListView
+                        android:id="@+id/listPresupuestoArticulos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:choiceMode="singleChoice" >
+                    </ListView>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+</LinearLayout>

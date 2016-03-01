@@ -1,0 +1,78 @@
+    <LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+    android:background="@drawable/view_border"
+    tools:context=".Cliente_Contactos" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text="@string/clientes"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cliente_name_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/contacto"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cargo"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/dato_de_contacto"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listContactos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+ 			android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp" >
+        </ListView>
+
+    </LinearLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/ver_producto"
+        android:icon="@drawable/inventario"
+        android:title="@string/ver_detalle"
+       	android:showAsAction="always" />	
+    <item android:id="@+id/guardar"
+        android:icon="@drawable/carrito"
+        android:title="@string/guardar"
+       	android:showAsAction="always" />	
+    <item android:id="@+id/atras"
+        android:icon="@drawable/atras"
+        android:title="@string/atras"
+       	android:showAsAction="always" />
+</menu><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/menu/pedidos_captura_tabs.xml -->

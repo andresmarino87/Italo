@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp"
+	android:orientation="vertical"
+    android:background="@drawable/view_border"
+	tools:context=".Pedidos_Captura">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/captura"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/articulo_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_impar"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"  />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/valor_unitario_label"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/valor_unitario"
+			android:background="@drawable/input_par"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/valor_unitario_input"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+			android:background="@drawable/celdas_par"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/iva_label"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+			android:background="@drawable/input_impar"
+            android:text="@string/iva_sin"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/iva_input"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/celdas_impar"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/promocion_label"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/promocion"
+			android:background="@drawable/input_par"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/promocion_input"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+			android:background="@drawable/celdas_par"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/valor_total_label"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+			android:background="@drawable/input_impar"
+            android:text="@string/valor_total"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/valor_total_input"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/celdas_impar"
+            android:gravity="right"
+			android:textSize="18sp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/menos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/menos"
+            android:src="@drawable/minus" />
+
+        <EditText
+            android:id="@+id/cantidad_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:maxLength="9"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+			android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <ImageButton
+            android:id="@+id/mas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/mas"
+            android:src="@drawable/plus" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/productos_primer_grado"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/celdas_header"
+            android:gravity="center"
+            android:text="@string/producto"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/celdas_header"
+            android:gravity="center"
+            android:text="@string/cantidad"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </TableRow>
+	<ListView
+            android:id="@+id/listHermanos"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+            android:choiceMode="singleChoice" >
+    </ListView>
+    
+<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/productos_segundo_grado"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp" />
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"  >
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/celdas_header"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/producto"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/celdas_header"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/cantidad"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</TableRow>
+
+<ListView
+    android:id="@+id/listPrimos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+    android:choiceMode="singleChoice" >
+</ListView>
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_pedidos_captura.xml -->

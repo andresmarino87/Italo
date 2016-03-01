@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/nuevo"
+        android:title="@string/nuevo"
+       	android:showAsAction="always" />	
+	<item android:id="@+id/ver_detalle"
+        android:title="@string/ver_detalle"
+       	android:showAsAction="always" />
+	<item android:id="@+id/eliminar"
+        android:title="@string/eliminar"
+       	android:showAsAction="always" />   
+</menu>

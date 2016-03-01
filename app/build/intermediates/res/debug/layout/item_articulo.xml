@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+        xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+		<TextView
+	    	android:id="@+id/row_codigo_input"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/celdas"
+            android:layout_weight="1"
+			android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+	     	android:text="" />
+		<TextView
+           	android:id="@+id/row_articulo_input"
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/celdas"
+            android:layout_weight="2.5"
+        	android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+        	android:text="" />
+		<TextView
+        	android:id="@+id/row_presentacion_input"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/celdas"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+            android:text="" />
+		<TextView
+        	android:id="@+id/row_peso_input"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/celdas"
+            android:layout_weight="1"
+			android:gravity="center_vertical|left"
+			android:textColor="@drawable/text_selector"
+            android:text="" />
+</TableRow><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/item_articulo.xml -->

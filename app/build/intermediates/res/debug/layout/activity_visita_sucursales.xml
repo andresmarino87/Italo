@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Visita_Sucursales" >
+    <TextView
+        android:id="@+id/cliente_name_input"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+		android:text="" />
+
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/cliente_name_input"
+    android:padding="10dp" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="5"
+                android:gravity="center"
+                android:text="@string/cuenta"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="17"
+                android:gravity="center"
+                android:text="@string/sucursal"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="5"
+                android:gravity="center"
+                android:text="@string/sector"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listSucursales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice" >
+        </ListView>
+    </TableLayout>
+</HorizontalScrollView>
+</RelativeLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_visita_sucursales.xml -->

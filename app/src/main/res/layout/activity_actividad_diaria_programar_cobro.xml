@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cliente_name_input"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search" >
+
+        <Button
+            android:id="@+id/programar_cobro_menor_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_no_seleccionado_tab_style"
+            android:gravity="center"
+            android:text="@string/menor_30" 
+            android:onClick="vencimiento"/>
+
+        <Button
+            android:id="@+id/programar_cobro_mayor_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_no_seleccionado_tab_style"
+            android:gravity="center"
+            android:text="@string/mayor_30" 
+            android:onClick="vencimiento"/>
+
+        <Button
+            android:id="@+id/programar_cobro_mayor_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_no_seleccionado_tab_style"
+            android:gravity="center"
+            android:text="@string/mayor_60"
+            android:onClick="vencimiento" />
+
+        <Button
+            android:id="@+id/programar_cobro_mayor_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_no_seleccionado_tab_style"
+            android:gravity="center"
+            android:text="@string/mayor_90" 
+            android:onClick="vencimiento"/>
+
+        <RadioButton
+            android:id="@+id/programar_cobro_todos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/todos"
+            android:textColor="@color/white" 
+            android:onClick="vencimiento"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayoutFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/Programar_cobro_fecha_hoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="06/12/12" />
+
+        </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayoutFecha"
+        android:layout_marginTop="10dp" >
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/table_actividad_vendedor_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/table_actividad_vendedor_head_ruta_o_extraruta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/documento" />
+
+                <TextView
+                    android:id="@+id/table_actividad_vendedor_head_tejido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/t_doc" />
+
+                <TextView
+                    android:id="@+id/table_actividad_vendedor_head_cuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/dias" />
+
+                <TextView
+                    android:id="@+id/table_actividad_vendedor_head_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/valor" />
+
+                <TextView
+                    android:id="@+id/table_actividad_vendedor_head_venta_proyectada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/saldo" />
+
+                <TextView
+                    android:id="@+id/table_actividad_vendedor_head_venta_real"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/venc" />
+
+                <TextView
+                    android:id="@+id/table_actividad_vendedor_head_cobro_proyectado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/celdas_header"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/fecha_fact" />
+            </TableRow>
+
+            <ListView
+                android:id="@+id/list_actividad_diaria_cobro_facturas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:scrollbarStyle="outsideInset" />
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/valor"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/programar_cobro_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/celdas"
+            android:editable="false"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        
+        <TextView
+                android:id="@+id/programar_cobro_fecha"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_gris"
+                android:gravity="center"
+                android:text="" 
+                android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/horizontalScrollView1"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/documento"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/programar_cobro_documento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/celdas"
+            android:editable="false"
+            android:ems="10" />
+    </LinearLayout>
+
+
+</RelativeLayout>

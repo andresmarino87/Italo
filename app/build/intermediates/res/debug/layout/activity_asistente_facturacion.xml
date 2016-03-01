@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_margin="10dp"
+	android:background="@drawable/view_border"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".Asistente_Facturacion"  >
+	<TextView
+		android:id="@+id/Header_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/view_head"
+		android:gravity="center"
+		android:text="@string/facturacion"
+		android:textColor="@color/white"
+		android:textSize="20sp"
+		android:textStyle="bold" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp" >
+
+		    <TextView
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="@string/sector"
+		        android:textSize="18sp"
+		        android:textStyle="bold" />
+
+		    <Spinner
+		        android:id="@+id/sector_input"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textSize="18sp"
+		        android:textStyle="bold" />
+
+		    <TextView
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="@string/periodo"
+		        android:textSize="18sp"
+		        android:textStyle="bold" />
+
+		    <Spinner
+		        android:id="@+id/periodo_input"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textSize="18sp"
+		        android:textStyle="bold" />
+
+		    <Button
+		        android:id="@+id/buscar_button"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="@string/buscar" />
+
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/chart"
+			android:layout_width="wrap_content"
+			android:layout_height="400dp"
+			android:orientation="horizontal" >
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:baselineAligned="false" >
+
+			<TableLayout
+			    android:layout_width="0dip"
+			    android:layout_weight="1.3"
+			    android:padding="10dp"
+			    android:layout_height="wrap_content" >
+
+			    <TableRow
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+			        <TextView
+			            android:layout_width="0dip"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="1"
+			            android:background="@drawable/celdas_header"
+			            android:gravity="center"
+			            android:text="@string/fecha"
+			            android:textColor="@color/white"
+			            android:textStyle="bold" />
+
+			        <TextView
+			            android:layout_width="0dip"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="1"
+			            android:background="@drawable/celdas_header"
+			            android:gravity="center"
+			            android:text="@string/valor"
+			            android:textColor="@color/white"
+			            android:textStyle="bold" />
+			    </TableRow>
+
+			    <ListView
+			        android:id="@+id/listFacturacion"
+			        android:layout_width="match_parent"
+			        android:layout_height="fill_parent"
+			        android:choiceMode="singleChoice" >
+			    </ListView>
+			</TableLayout>
+
+			<LinearLayout
+			    android:layout_width="0dip"
+			    android:layout_weight="0.7"
+			    android:layout_height="fill_parent"
+			    android:padding="10dp"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/promedio"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<TextView
+				    android:id="@+id/promedio_input"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text=""
+				    android:background="@drawable/celdas_impar"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/dia_maximo"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<TextView
+				    android:id="@+id/dia_maximo_input"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text=""
+				    android:background="@drawable/celdas_impar"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/dia_minimo"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<TextView
+				    android:id="@+id/dia_minimo_input"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text=""
+				    android:background="@drawable/celdas_impar"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+												
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>            
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/activity_asistente_facturacion.xml -->

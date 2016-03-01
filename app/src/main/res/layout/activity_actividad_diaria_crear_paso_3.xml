@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/view_border" 
+    android:layout_margin="10dp"
+    tools:context=".Actividad_Diaria_Crear_Paso_3" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/vendedor_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_head"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+					android:layout_weight="1"
+                    android:text="@string/fecha"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/input_par"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecha_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/celdas_par"
+                    android:gravity="center"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/n_plan"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/input_impar"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/n_plan_input"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/celdas_impar"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compromisos_del_vendedor"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/compromisos_del_vendedor_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+					android:digits="@string/allow_digits" 
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/celdas"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

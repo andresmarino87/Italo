@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sector"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sector_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/porcentaje"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/porcentaje_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar_por"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/buscar_por_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/filtros_articulos_string_array" />
+    </LinearLayout>
+<!--     <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" 
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/nombre_input"
+            android:layout_width="100dp"
+            android:layout_height="wrap_cntent"
+            android:text="@string/nombre"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/codigo_input"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/codigo"
+            android:textStyle="bold" />
+    </RadioGroup>
+ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <AutoCompleteTextView
+            android:id="@+id/text_input"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/celdas"
+            android:ems="10"
+            android:digits="@string/allow_digits" 
+            android:hint="@string/buscar" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/search_asistente_presupuesto_articulos.xml -->

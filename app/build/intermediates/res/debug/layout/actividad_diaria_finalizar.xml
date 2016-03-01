@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold"
+        android:text="@string/antes_de_finalizar_la_actividad" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/n_clientes_nuevos_hoy" />
+
+        <EditText
+            android:id="@+id/n_clientes_nuevos_hoy_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="9"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"  >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+            android:text="@string/ventas_clientes_nuevos_hoy" />
+
+        <EditText
+            android:id="@+id/ventas_clientes_nuevos_hoy_input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="12"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accion_de_la_competencia"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/accion_de_la_competencia_input"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+		android:digits="@string/allow_digits"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:hint="@string/accion_de_la_competencia" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/esta_seguro_que_desea_finalizar_la_actividad" />
+
+</LinearLayout>
+<!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/actividad_diaria_finalizar.xml -->

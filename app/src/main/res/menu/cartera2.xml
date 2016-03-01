@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/mas_filtros" 
+        android:title="@string/mas_filtros" 
+        android:icon="@drawable/lupa_con_mas"
+       	android:showAsAction="ifRoom" />
+    <item android:id="@+id/ver_resumen_pago" 
+        android:title="@string/ver_resumen_pago" 
+        android:icon="@drawable/resumen_pago"
+       	android:showAsAction="ifRoom" />
+    <item android:id="@+id/ver_pagos_programados" android:title="@string/ver_pagos_programados" android:icon="@drawable/ver_pagos_prog" android:showAsAction="ifRoom"></item><item android:id="@+id/atras" 
+        android:title="@string/atras" 
+        android:icon="@drawable/atras"
+       	android:showAsAction="ifRoom" />
+    
+</menu>

@@ -1,0 +1,159 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+	android:layout_margin="10dp"
+    android:background="@drawable/view_border"
+    tools:context=".Cliente_Horarios" >
+
+    <TextView
+        android:id="@+id/view_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+		android:textColor="@color/white"
+	    android:background="@drawable/view_head"
+        android:gravity="center"
+        android:text="@string/clientes"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/cliente_name_input"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/view_head"
+    android:layout_centerHorizontal="true"
+    android:padding="10dp"
+	android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textStyle="bold"
+    android:text="" />
+
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:padding="10dp"
+    android:layout_below="@+id/cliente_name_input" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="8"
+                android:gravity="center"
+                android:text="@string/tipo_de_horario"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="4"
+                android:gravity="center"
+                android:text="@string/lun"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="4"
+                android:gravity="center"
+                android:text="@string/mar"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="4"
+                android:gravity="center"
+                android:text="@string/mie"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="4"
+                android:gravity="center"
+                android:text="@string/jue"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="4"
+                android:gravity="center"
+                android:text="@string/vie"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="4"
+                android:gravity="center"
+                android:text="@string/sab"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="4"
+                android:gravity="center"
+                android:text="@string/dom"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="7"
+                android:gravity="center"
+                android:text="@string/hora_inicial"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/celdas_header"
+                android:ems="7"
+                android:gravity="center"
+                android:text="@string/hora_final"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listHorarios"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:choiceMode="singleChoice" >
+        </ListView>
+    </TableLayout>
+</HorizontalScrollView>
+
+</RelativeLayout>

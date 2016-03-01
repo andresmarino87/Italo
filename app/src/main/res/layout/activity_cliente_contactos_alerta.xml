@@ -1,0 +1,107 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    tools:context=".Cliente_Contactos_Modificar" 
+	android:padding="5dp"  >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contacto"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/celdas_header"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/contacto_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/contacto"
+			android:digits="@string/allow_digits" 
+            android:maxLength="50"
+            android:layout_marginTop="10dp" />
+ 
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/cargo"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/celdas_header"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/cargo_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/medio_de_comunicacion"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/celdas_header"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/medio_de_comunicacion_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detalle"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/celdas_header"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/detalle_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:maxLength="50"
+			android:digits="@string/allow_digits" 
+            android:hint="@string/detalle" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/estado"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/celdas_header"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/estado_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text=""/>
+
+    </LinearLayout>
+</ScrollView>

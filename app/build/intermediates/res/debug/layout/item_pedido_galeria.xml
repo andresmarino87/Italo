@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/contenedor"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+	android:background="@drawable/celdas_par"
+	android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+		android:id="@+id/name_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/image_input"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/producto"
+        android:gravity="center_horizontal" />
+
+</LinearLayout><!-- From: file:/Users/kate/Dropbox/Deveps/Android/Italo/app/src/main/res/layout/item_pedido_galeria.xml -->
